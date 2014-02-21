@@ -33,7 +33,7 @@ function starRating($n) {
 	}
 	return $str;
 }
-mysql_connect ("localhost", "broker_master", "Gadgets01") or die ('MySQL connection failed.');
+mysql_connect ("localhost", "broker_master", "") or die ('MySQL connection failed.');
 mysql_select_db("broker_master") or die('Cannot select database.');
 $n = "";
 $prepend_title = "";
