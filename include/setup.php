@@ -111,7 +111,7 @@ function getSupInfo($sid) {
 	$s = mysql_query("SELECT * FROM `db_supplier` WHERE `id` = '{$sid}';")or die(mysql_error());
 	return mysql_fetch_assoc($s);
 }
-mysql_connect ("localhost", "broker_master", "Gadgets01") or die ('MySQL connection failed.');
+mysql_connect ("localhost", "broker_master", "") or die ('MySQL connection failed.');
 mysql_select_db("broker_master") or die('Cannot select database.');
 mysql_query("UPDATE `db_analytics` SET `page_views` = `page_views` + 1;") or die(mysql_error());
 
